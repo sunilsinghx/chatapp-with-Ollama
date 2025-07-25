@@ -1,0 +1,24 @@
+# Ignore .env.sample files anywhere
+**/.env
+
+# Optional common ignores (uncomment if needed):
+
+# node_modules folders
+node_modules/
+
+# Build output folders
+client/build/
+server/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+# yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.vscode/
