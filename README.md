@@ -1,6 +1,6 @@
 # 🧠 Local ChatGPT-style App using LLaMA 2 & Ollama
 
-Welcome to the **Cointab Developer Assignment** — a local ChatGPT-style application powered by **LLaMA 2 (via Ollama)**, built with **Next.js**, **Node.js**, and **PostgreSQL**.
+A local ChatGPT-style application powered by **LLaMA 2 (via Ollama)**, built with **Next.js**, **Node.js**, and **PostgreSQL**.
 
 ---
 

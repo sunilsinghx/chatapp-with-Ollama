@@ -76,7 +76,7 @@ export async function handleOllamaStream(
 }
 
 export const generateTitleFromMessage = async (message: string): Promise<string> => {
-  const prompt = `What is a short, clean title for this message in just 3 to 4 words for : "${message}"`;
+  const prompt = `Write a short, clean title for this message in just 3 to 4 words for : "${message}"`;
 
   try {
     const response = await axios.post('http://localhost:11434/api/generate', {

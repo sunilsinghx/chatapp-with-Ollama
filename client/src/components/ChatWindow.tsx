@@ -54,6 +54,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ chatId }) => {
     setMessages((prev) => [...prev, userMessage]);
     setIsStreaming(true);
     setLoading(true)
+    setIsFinished(false)
 
     try {
       const res = await sendMessage({ chatId, message });

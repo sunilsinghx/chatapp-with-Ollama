@@ -12,7 +12,7 @@ export const getChats = async () => {
 
 export const getChatsById = async ({chatId}:{chatId:string}) => {
   try {
-    const res = await fetch(`http://localhost:5000/api/chat/${chatId}`);
+    const res = await fetch(`${BACKEND_URL}/api/chat/${chatId}`);
     const data = await res.json();
     return data
   } catch (error) {

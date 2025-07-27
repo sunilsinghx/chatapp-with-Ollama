@@ -13,8 +13,6 @@ interface MessageBubbleProps {
 
 const MessageBubble: React.FC<MessageBubbleProps> = ({ role, content, isTyping = false,isFinished }) => {
   const isUser = role === 'user';
-  console.log("isTyping: ",isTyping);
-  
 
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
