@@ -2,6 +2,8 @@
 
 A local ChatGPT-style application powered by **LLaMA 2 (via Ollama)**, built with **Next.js**, **Node.js**, and **PostgreSQL**.
 
+![newChat](images/newChat.png)
+![chats](images/output.png)
 ---
 
 ## 🔧 Tech Stack

@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import MessageBubble from "./MessageBubble";
 import MessageInput from "./MessageInput";
-import { TypingIndicator } from "./TypingEffect";
+import { v4 as uuidv4, v4 } from 'uuid';
 import { getChatsById, sendMessage, stopMessage } from "@/api/api";
 
 interface Message {
@@ -45,7 +45,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ chatId }) => {
 
   const sendMsg = async (message: string) => {
     const userMessage = {
-      id: Date.now().toString(),
+      id: uuidv4(),
       role: "user" as const,
       content: message,
       timestamp: new Date().toISOString(),
@@ -91,7 +91,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ chatId }) => {
           return [
             ...prev,
             {
-              id: Date.now().toString(),
+              id: uuidv4(),
               role: "assistant" as const,
               content: assistantMessage,
               timestamp: new Date().toISOString(),
